@@ -1,0 +1,488 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: "Roboto", sans-serif;
+
+  }
+
+
+nav{
+    background: #ff69b4;
+    height: 80px;
+    width: 100%;
+}
+.logo{
+    width: 130px;
+    position:relative;
+}
+.card-img{
+    /* style="width: 250px; padding-left: 40px;" */
+    width: 100%;
+    /* padding-left: 40px; */
+    
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    padding: 7px 13px;
+
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 2px;
+}
+a.active, a:hover{
+    background: rgb(240, 48, 131);
+    transition: .5s;
+    width: 170px;
+    border-radius: 20px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    /* padding: 20px; */
+    background: #ffd8e6;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    display: flex;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    justify-content: center;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 45%;
+  }
+
+  .text{
+      display: flex;
+      justify-content: center;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    height: 200%;
+    /* padding: 20px; */
+  }
+
+  .img {
+    width: 100%;
+    margin-top: -40px;
+    padding-top: 65px;
+
+  }
+  .imgi{
+      padding: 5px;
+  }
+  .display{
+      
+      width: 25%;
+      padding: 5px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+
+  .cardd {
+    display:inline-flex;
+
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .footer {
+    /* display: flex; */
+    /* bottom:0; */
+    width:100%;
+      /* Height of the footer */
+      height: 50%;
+    justify-content: center;
+    background:#fa2c93;
+ }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+/*
+.cards{
+    margin-bottom: 10px;
+
+}
+
+
+.card {
+    padding-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 300px;
+    height: 500px;
+    position:static;
+    Add shadows to create the "card" effect
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  On mouse-over, add a deeper shadow
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
+  
+  Add some padding inside the card container
+  .container {
+    width:  100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .card-container{
+      width: 200px;
+      height: 300px;
+  }
+*/
+
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+/* footer */
+
+.site-footer
+{
+  background-color:#ff69b4;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#e90e50;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:10;
+  margin-left: 20px;
+  list-style:none
+}
+
+.footer-links li :hover{
+    background: rgb(240, 48, 131);
+    transition: .5s;
+    width: 170px;
+    border-radius: 15px;
+}
+
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  color:#f05d73;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.insta:hover
+{
+  background-color:#ed00aa
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.mail:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+@media (max-width: 858px){
+    /* .img{
+        position: relative;
+        top: -7vmin;
+    } */
+    .checkbtn{
+        display: block;
+    }
+    .navbul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background:#ff1493;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    a:hover,a.active{
+        background: none;
+        color:#ff899b;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+}
+
+div.polaroid {
+    padding: 5px;
+    width: 95%;
+    margin-right: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  div.containerr 
+  /* so as to not conflict with the other container styling */
+  {
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    /* width: 400px; */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    width: 100%;
+  }
+  .grid-item {
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 10px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+button{
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      /* position: absolute; */
+      background: pink;
+      border-radius: 10px;
+      padding: 10px;
+
+  }
+
+  .svg{
+      position:static;
+      width: 50%;
+  }
+
+  .post{
+      background-color: pink;
+      width: 100%;
+      
+  }
