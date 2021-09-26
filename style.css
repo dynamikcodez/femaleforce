@@ -409,7 +409,7 @@ body {
     .navbul{
         position: absolute;
         width: 100%;
-        height: 100vh;
+        /* height: 100; */
         background:#ff1493;
         top: 80px;
         left: -100%;
